@@ -2,7 +2,13 @@ import numpy as np
 import pandas as pd
 from utils.data_operation import euclid_distance, manhattan_distance
 
-
+'''
+    K-Means: Unsupervised Learning
+    1. Create random centroids
+    2. Create k clusters based on random centroids by the minimum of distance between samples and centroids
+    3. Compute new centroid by mean of cluster's samples
+    4. Loop 2 and 3 util convergence. 
+'''
 
 class KMeans():
     def __init__(self, k=2, max_iterations=1000, distance=euclid_distance):
