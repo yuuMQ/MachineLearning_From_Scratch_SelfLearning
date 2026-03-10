@@ -1,5 +1,5 @@
 import numpy as np
-from metrics.loss import mean_squared_error, mean_absolute_error
+from metrics.regression_metrics import mean_squared_error, mean_absolute_error
 
 '''
     Regularization: L1 (Lasso) và L2 (Ridge), giảm overfitting bằng cách phạt các weight lớn trong model
